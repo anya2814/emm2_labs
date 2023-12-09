@@ -91,3 +91,10 @@ for(i in 1:N) {
 
 psi_est = 1/N*count
 psi_est
+
+# проверка условия
+ro = c/(lambda*m) - 1
+psi_lim = exp(-1/m*ro/(1+ro)*U0)
+psi_lim
+
+# psi_est < psi_lim - условие выполняется
